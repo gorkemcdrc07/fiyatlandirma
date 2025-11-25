@@ -5,7 +5,7 @@ function App() {
     const [musteriler, setMusteriler] = useState([]);
 
     useEffect(() => {
-        axios.get("https://10.110.110.97:5000/api/musteriler")
+        axios.get("https://fiyatlandirma-backend.onrender.com/api/musteriler")
             .then(res => setMusteriler(res.data))
             .catch(err => console.error("API HATASI:", err));
     }, []);
